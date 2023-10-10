@@ -1,0 +1,597 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    outline: none;
+
+}
+
+
+:root{
+    --text-color : rgb(255,255,255);
+    --bg-body  : #01131c;
+    --font-poppins : 'Poppins', sans-serif;
+    --li-margin-right: 40px;
+    --bg-button: #046158;
+    --section-tmargin: 100px;
+    --h1-font : 3.5rem;
+    --p-font-size: 0.9rem;
+    --p-font-weight: 200;
+    --p-line-height: 30px;
+    --h2-font: 2rem;
+    --button-padding : 10px 20px;
+    --sections-top-margin : 200px;
+    --overallpadding : 0 150px;
+}
+
+body{
+    background-color: var(--bg-body);
+    font-family: var(--font-poppins);
+}
+
+.overallwrapper{
+    max-width: 1400px;
+    margin: auto;
+    padding: var(--overallpadding)
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    position: sticky;
+    top: 0;
+}
+
+header.nowsticky{
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0 -150px;
+    padding: 0 150px;
+}
+
+header > a{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    
+}
+
+header nav{
+    transition: all 2s 20s ease;
+    
+}
+
+header > nav ul{
+    display: flex;
+}
+
+header > nav ul li{
+    margin-right:var(--li-margin-right) ;
+}
+
+header > nav ul li a{
+    color: var(--text-color);
+    font-size: 0.7rem;
+}
+
+header > div a{
+    color: var(--text-color);
+    padding: 5px 10px;
+    text-transform: capitalize;
+    font-size: 0.5rem;
+}
+
+header > div a:nth-child(2){
+    background-color: var(--bg-button);
+    box-shadow: 0px 0px 5px white, 0px 0px 10px var(--bg-button);
+}
+
+
+/* section1 css */
+.section1{
+    color: var(--text-color);
+    margin-top: var(--section-tmargin);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section1 .column1 > h1 {
+    font-size: var(--h1-font);
+}
+
+
+.section1 .column1 > p {
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    line-height: var(--p-line-height);
+    margin: 20px 0 40px;
+}
+
+
+
+.section1 .column1 > div {
+    background-color: var(--text-color);
+    display: inline-block;
+    padding: 3px;
+    padding-left: 8px;
+    border-radius: 10px;
+}
+
+
+.section1 .column1 > div form input:first-child{
+    margin-right: 50px;
+}
+
+
+.section1 .column1 > div form input:nth-child(2){
+    background-color: var(--bg-button);
+    color: var(--text-color);
+    padding: 10px 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px white, 0px 0px 10px var(--bg-button);
+}
+
+
+.section1 .column2 img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 5px white, 0px 0px 10px var(--bg-button);
+}
+
+
+.section1 > div{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid; */
+}
+
+
+.section1 > div:nth-child(2){
+    width: 40%;
+   
+}
+
+
+
+
+/* Featured section*/
+.featured {
+    margin-top: 200px;
+   
+}
+
+
+.featured img{
+    width: 100%;
+    height: auto;
+}
+
+.featured .featured-content div{
+    width: 10%;
+    height: auto;
+}
+
+
+.featured > H2{
+    color: var(--text-color);
+}
+
+
+.featured .featured-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     margin-top: 30px;
+
+}
+
+
+
+/* Properties section css*/
+.properties{
+    margin-top: 200px;
+}
+
+.properties .properties-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+    color: var(--text-color);
+}
+
+.properties .item{
+    /* border: 1px solid; */
+}
+
+.properties .item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* box-shadow: 0px 0px 2px white; */
+
+}
+
+.properties .properties-content .item .icons{
+    display: flex;
+}
+
+.properties > h2{
+    color: var(--text-color);
+}
+
+.properties .properties-content .item .icons div{
+    display: flex;
+}
+
+.properties .properties-content .item .icons div i{
+    color: var(--bg-button);
+    margin-right: 10px;   
+}
+
+.properties .properties-content .item .icons div{
+    margin-right: 30px;
+}
+
+
+.properties .properties-content .item .icons{
+    margin-top: 10px;
+}
+
+.properties .properties-content .item .icons{
+    margin-top: 10px;
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+}
+
+
+.properties .properties-content .item div > h3{
+    margin-top: 20px;
+}
+
+.properties > .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.properties > .button a{
+    color: var(--text-color);
+    background-color: var(--bg-button);
+    padding: 10px 20px;
+}
+
+/* section4*/
+.section4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid green; */
+    padding: 10px;
+    color: var(--text-color);
+    margin-top: var(--sections-top-margin);
+}
+
+
+.section4 > DIV{
+    width: 50%;
+    /* border: 1px solid red;
+      */
+}
+
+
+
+.section4 .column1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     margin-right: 50px;
+}
+
+
+.section4 .column1 img{
+    width: 100%;
+    height: 400PX;
+    object-fit: cover;
+}
+
+
+
+.section4 .column1 div:nth-child(1){
+    margin-right: 15px;
+}
+
+
+.section4 .column2 > h1{
+    font-size: var(--h2-font);
+}
+
+.section4 .column2 p{
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    line-height: var(--p-line-height);
+    margin: 10px 0 40px;
+}
+
+.section4 .column2 > a{
+    background-color: var(--bg-button);
+    color: white;
+    padding: var(--button-padding);
+}
+
+
+/* section5 */
+.section5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: var(--sections-top-margin);
+    color: var(--text-color);
+    background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0.2)), url("./images/bg1.jpeg") no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.section5 p{
+    width: 70%;
+}
+
+.section5 a{
+    color: var(--text-color);
+    background: var(--bg-button);
+    padding: var(--button-padding);
+}
+
+
+.section5 p{
+    margin: 10px 0 20px;
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    line-height: var(--p-line-height);
+}
+
+/* ffooter */
+.footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: var(--text-color);
+    margin-top: var(--sections-top-margin);
+}
+.footer a{
+    color: var(--text-color);
+}
+
+.footer div > ul li {
+    margin-bottom: 10px;
+}
+
+
+.footer div > h3 {
+    margin-bottom: 20px;
+}
+
+
+.footer div:first-child > div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+
+
+.footer div:first-child > p{
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+    line-height: var(--p-line-height);
+    margin: 15px 0;
+
+}
+
+.footer div:first-child > div i{
+        margin-right: 20px;
+}
+
+
+
+
+
+
+header nav > ul .x-icon{
+    display: none
+}
+
+
+header > .menu{
+    display: none;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+header nav ul li > div {
+   width: 0;
+   height: 2px;
+   transition: all 2s ease;
+}
+
+header nav ul li a{
+    display: block !important;
+    width: inherit;
+}
+
+header nav ul{
+    /* border: 1px solid red; */
+}
+
+
+.footer > div:first-child{
+    margin-right: 40px;
+}
+
+
+/* media queries start*/
+
+@media screen and (max-width:1070px) {
+
+    
+:root{
+    --text-color : rgb(255,255,255);
+    --bg-body  : #01131c;
+    --font-poppins : 'Poppins', sans-serif;
+    --li-margin-right: 40px;
+    --bg-button: #046158;
+    --section-tmargin: 100px;
+    --h1-font : 2.5rem;
+    --p-font-size: 0.7rem;
+    --p-font-weight: 200;
+    --p-line-height: 30px;
+    --h2-font: 2rem;
+    --button-padding : 10px 20px;
+    --sections-top-margin : 200px;
+    --overallpadding : 0 10%;
+}
+
+
+    header nav{
+        display: none;
+    }
+    
+    
+header nav > ul .x-icon{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+    header.rightnav nav{
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        background-color:var(--bg-button);
+        padding: 20px 0 0 20px;
+        z-index: 1000;       
+    }
+
+    header> .menu{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0; 
+    }
+
+    header.rightnav nav ul{
+        flex-direction: column;
+    }
+
+    header.rightnav  nav ul li{
+        margin-bottom: 15px;
+        padding-right: 0;
+    }
+
+    header nav ul li:hover > div {
+        display: inline;
+        color: red;
+        background-color: red;
+        width: 100%;
+    }
+
+    header nav ul li{
+        /* border: 1px solid red; */
+    }
+
+    
+    header nav ul li > div{
+        /* border: 1px solid red; */
+    }
+    
+    .footer{
+        grid-template-columns: repeat(3, 1fr);
+     }
+
+    
+    .footer > div {
+        margin-top: 50px;
+    }
+/* 
+    header{
+        border: 1px solid red;
+    } */
+}
+
+
+@media screen and (max-width:786px) {
+
+    
+    :root{
+        --text-color : rgb(255,255,255);
+        --bg-body  : #01131c;
+        --font-poppins : 'Poppins', sans-serif;
+        --li-margin-right: 40px;
+        --bg-button: #046158;
+        --section-tmargin: 100px;
+        --h1-font : 2.5rem;
+        --p-font-size: 0.7rem;
+        --p-font-weight: 200;
+        --p-line-height: 30px;
+        --h2-font: 2rem;
+        --button-padding : 10px 20px;
+        --sections-top-margin : 200px;
+        --overallpadding : 0 10%;
+    }
+
+
+    .section1 {
+        flex-direction: column;
+        /* border: 1px solid; */
+    }
+
+    .section1 .column1 {
+        width: 100%;
+        /* border: 1px solid rebeccapurple; */
+    }
+
+    .section1 .column2 {
+        /* border: 1px solid red; */
+  }
+
+    
+    .properties .properties-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section4 {
+        flex-direction: column;
+    }
+
+    .section4 .column1{
+        flex-direction: column;
+    }
+
+    .section4 .column1, .section4 .column2{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .section4 .column1 > div{
+        margin-right: 0 !important;
+    }
+
+    .footer{
+       grid-template-columns: repeat(1, 1fr);
+    }
+
+    
+}    
+

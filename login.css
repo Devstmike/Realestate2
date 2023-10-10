@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    outline: none;
+}
+
+:root{
+    --text-color : rgb(255,255,255);
+    --bg-body  : #01131c;
+    --font-poppins : 'Poppins', sans-serif;
+    --li-margin-right: 40px;
+    --bg-button: #046158;
+    --section-tmargin: 100px;
+    --h1-font : 3.5rem;
+    --p-font-size: 0.9rem;
+    --p-font-weight: 200;
+    --p-line-height: 30px;
+    --h2-font: 2rem;
+    --button-padding : 10px 20px;
+    --sections-top-margin : 200px;
+    --overallpadding : 0 150px;
+}
+
+body{
+    background-color: var(--bg-body);
+    color: var(--text-color);
+    font-family: var(--font-poppins);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper .flexit{
+    display: flex;
+    /* flex-direction: row;*/
+    /* border: 1px solid red;  */
+}
+
+
+.wrapper .flexit > div{
+    /* padding-right: 100px; */
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+
+.wrapper .column2 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+
+.wrapper .column2{
+    padding:50px
+}
+
+
+.wrapper form{
+    padding: 50px;
+}
+
+.wrapper .column1 form > *{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form div > p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+form div > p a{
+    color: #3f7b99;
+    font-size: 0.8rem;
+}
+
+
+.wrapper form > h1{
+    /* border: 1px solid; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+form > input{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+form > input:last-child{
+    background-color: var(--bg-button);
+    color: var(--text-color);
+}
+
+@media screen and (max-width:768px) {
+    .wrapper .flexit{
+        flex-direction: column;
+    }
+    
+    .column2{
+        display: none
+    }
+
+    .wrapper{
+        border: 1px solid red;
+        width: 90%;
+    }
+}
